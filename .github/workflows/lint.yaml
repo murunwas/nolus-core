@@ -1,11 +1,6 @@
 name: Lint
 on:
-  pull_request:
-  push:
-    tags:
-      - v*
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   golangci:
