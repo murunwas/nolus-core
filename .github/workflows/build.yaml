@@ -40,8 +40,7 @@ jobs:
       - name: Download Dependencies
         run: go mod download
       - name: Build nolusd
-        run: |
-          GOWRK=off go build cmd/nolusd/main.go
+        run: make build
       - name: Upload nolusd artifact
         uses: actions/upload-artifact@v3
         with:
